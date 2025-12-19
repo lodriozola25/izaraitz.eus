@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Ticketing System</title>
+        <!--css section -->
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+        
+        <!-- js section -->
+        <script src="js/ticketing.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <img src="images/title.jpeg" id="title-image"/>
+            <div id="login-form">
+                <h1>Login</h1>
+                <div id="login-inputs">
+                    <div class="login-line">
+                        <label>User:</label>
+                        <input type="text" placeholder="Insert username" id="username"/>
+                    </div>
+                    <div class="login-line">
+                        <label>Pass:</label>
+                        <input type="password" placeholder="Insert password" id="password" onkeypress="check_enter(event)"/>
+                    </div>
+                    <div class="login-line">
+                        <input type="button" value="Log in" onclick="login()"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
